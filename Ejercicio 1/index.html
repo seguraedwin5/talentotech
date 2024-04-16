@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Ejercicio 1</title>
+
+</head>
+<body>
+    <div class="tables-container">
+
+    
+    <div class="column-table">
+        
+        <table>
+            <thead>
+
+                <tr>
+                    <th colspan="4" ><h3>productos</h3></th>
+                    
+                    
+                </tr>
+                <tr>
+                    <th>id</th>
+                    <th>nombre</th>
+                    <th>precio</th>
+                    <th>acciones</th>
+                </tr>
+            </thead>
+            <tbody id="items"></tbody>
+        </table>
+    </div>
+    <div class="column-table">
+        <table id="tabla_carrito">
+            <thead>
+                <tr>
+                    <th colspan="3"><h3>carrito</h3><span><p id="total-items-carrito">0 <span> Items</span></p></p></span></th>
+                    <th><button class="btn btn_comprar" onclick="abrirFormCompra()">Finalizar Compra</button></th>
+                </tr>
+                <tr>
+                    <th>id</th>
+                    <th>nombre</th>
+                    <th>precio</th>
+                    <th>acciones</th>
+                </tr>
+            </thead>
+            <tbody id="itemscarrito"></tbody>
+        </table>
+    </div>
+</div>
+    <dialog id="dialog-compra" onblur="cerrarFormCompra()">
+        <header><h1>Finaliza la compra</h1></header>
+        <section><p>Estos son los detalles de tu compra, falta poco!</p>
+            <h3>El total de la compra es <span class="totalcompra" id="totalcompra">&dollar;0</span></h3>
+            <form method="post" class="form_compra">
+                <div class="formgroup">
+                    <label for="txt_nombre" class="formitem">Nombre</label>
+                    <input id="txt_nombre" type="text" class="formitem" required>
+                </div>
+                <div class="formgroup">
+                    <label for="txt_correo" class="formitem">Correo</label>
+                    <input id="txt_correo" type="text" class="formitem" required>
+                </div>
+                <div class="formgroup">
+                    <label for="txt_direccion" class="formitem">Direccion</label>
+                    <input id="txt_direccion" type="text" class="formitem" required>
+                </div>
+                <div class="formgroup">
+                    <label for="txt_telefono" class="formitem">Telefono</label>
+                    <input id="txt_telefono" type="text" class="formitem" required>
+                </div>
+                <div class="formgroup">
+                <button class="btn btn_eliminar formitem" type="reset" onclick="cerrarFormCompra()">Cancelar</button>
+                <button class="btn btn_agregar formitem" type="submit">Comprar</button>
+                </div>
+            </form>
+        </section>
+        <footer>
+           
+        </footer>
+    </dialog>
+
+
+    <script src="models.js" ></script>
+    <script src="main.js" ></script>
+    
+</body>
+</html>
