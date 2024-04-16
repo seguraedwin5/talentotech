@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 600px;
+    margin-top: 50px;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px;
+    padding: 20px;
+    width: 400px;
+    min-height: 200px;
+}

@@ -1,0 +1,111 @@
+table, th, td {
+    
+    border: 2px solid black;
+    padding: 3px;
+    text-align: center;
+}
+
+th{
+    text-align: center;
+}
+table{
+    width: 100%;
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+
+td {
+    background-color: #00cbdf ;
+    color: black;
+}
+
+.carrito-container table{
+    background-color: aquamarine;
+}
+
+.tables-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+}
+
+.column-table{
+    float: left;
+    width: 50%;
+}
+
+tbody#itemscarrito td {
+    background-color: rgb(138, 102, 235);
+    color: black
+}
+
+.btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 1px 2px 15px black ;
+    animation-duration: 0.5s;
+}
+
+.btn_agregar{
+    background-color: #00eb1b;
+}
+.btn_agregar:hover{
+    background-color: #009111;
+
+}
+
+.btn_eliminar{
+    background-color: #ac003c;
+    color: white;
+}
+.btn_eliminar:hover{
+    background-color: #ff0012;
+
+}
+
+.btn_comprar{
+    background-image: linear-gradient(to right, #ee1bc1, #eeee11);
+    height: fit-content;
+}
+
+dialog{
+    border-radius: 10px;
+    border: 0px;
+
+}
+dialog::backdrop{
+    
+    backdrop-filter: blur(10px) ;
+}
+
+.form_compra{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: auto;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.formgroup{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    margin: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formitem{
+    min-width: 120px;
+    width: 50%;
+}
+
+footer{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+}

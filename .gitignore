@@ -1,1 +1,4 @@
 .vscode/
+.prettierrc
+utils.js
+*.json
